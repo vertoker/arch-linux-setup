@@ -6,37 +6,39 @@
 
 	"modules-left": [
 		"hyprland/workspaces",
-		"custom/right-arrow-dark"
+		"custom/right-arrow-dark",
+		
+		"custom/right-arrow-light",
+		"battery",
+		"custom/right-arrow-dark",
+		
+		"custom/right-arrow-light",
+		"pulseaudio",
+		"custom/right-arrow-dark",
+		
+		"custom/right-arrow-light",
+		"memory",
+		"custom/right-arrow-dark",
+		
+		"custom/right-arrow-light",
+		"cpu",
+		"custom/right-arrow-dark",
 	],
 	"modules-center": [
+
+	],
+	"modules-right": [
+		"custom/left-arrow-dark",
+		"clock#3",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"clock#2",
+		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"clock#1",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
-		"clock#2",
-		"custom/right-arrow-dark",
-		"custom/right-arrow-light",
-		"clock#3",
-		"custom/right-arrow-dark"
-	],
-	"modules-right": [
-		"custom/left-arrow-dark",
-		"pulseaudio",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"memory",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"cpu",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"battery",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"disk",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"tray"
+		"tray",
 	],
 
 	"custom/left-arrow-dark": {
@@ -56,33 +58,38 @@
 		"tooltip": false
 	},
 
+	// Weekday
+	"clock#3": {
+		//"locale": "ru",
+		"format": "{:%A}",
+		"tooltip": false
+	},
+	// Date
+	"clock#2": {
+		"format": "{:%d-%m-%Y}",
+		"tooltip": false
+	},
+	// Time
+	"clock#1": {
+		"interval": 1,
+		"format": "{:%H:%M:%S}",
+		"tooltip": false
+	},
+
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
-			"1": "",
-			"2": "",
-			"3": "",
-			"4": "",
-			"5": "",
-			"urgent": "",
-			"active": "",
-			"default": ""
+			"1": "O",
+			"2": "O",
+			"3": "O",
+			"4": "O",
+			"5": "O",
+			"urgent": "X",
+			"active": "X",
+			"default": "O"
 		},
 		"sort-by-number": true
-	},
-
-	"clock#1": {
-		"format": "{:%a}",
-		"tooltip": false
-	},
-	"clock#2": {
-		"format": "{:%H:%M}",
-		"tooltip": false
-	},
-	"clock#3": {
-		"format": "{:%m-%d}",
-		"tooltip": false
 	},
 
 	"pulseaudio": {
@@ -102,7 +109,7 @@
 	},
 	"memory": {
 		"interval": 5,
-		"format": "Mem {}%"
+		"format": "RAM {}%"
 	},
 	"cpu": {
 		"interval": 5,

@@ -1,5 +1,5 @@
 * {
-	font-size: 20px;
+	font-size: 16px;
 	font-family: monospace;
 }
 
@@ -23,6 +23,9 @@ window#waybar {
 #clock.2,
 #clock.3,
 #pulseaudio,
+#bluetooth,
+#network,
+#language,
 #memory,
 #cpu,
 #battery,
@@ -69,6 +72,9 @@ window#waybar {
 #memory,
 #cpu,
 #battery,
+#language,
+#network,
+#bluetooth,
 #disk {
 	padding: 0 10px;
 }

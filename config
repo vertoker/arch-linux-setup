@@ -23,20 +23,33 @@
 		"custom/right-arrow-light",
 		"cpu",
 		"custom/right-arrow-dark",
+		
+		"custom/right-arrow-light",
+		"hyprland/language",
+		"custom/right-arrow-dark",
 	],
 	"modules-center": [
+		"custom/left-arrow-dark",
+		"bluetooth",
+		"custom/right-arrow-dark",
 
+		"custom/left-arrow-dark",
+		"network",
+		"custom/right-arrow-dark",
 	],
 	"modules-right": [
 		"custom/left-arrow-dark",
 		"clock#3",
 		"custom/left-arrow-light",
+
 		"custom/left-arrow-dark",
 		"clock#2",
 		"custom/left-arrow-light",
+
 		"custom/left-arrow-dark",
 		"clock#1",
 		"custom/left-arrow-light",
+
 		"custom/left-arrow-dark",
 		"tray",
 	],
@@ -97,15 +110,16 @@
 		"format-bluetooth": "{icon}  {volume}%",
 		"format-muted": "MUTE",
 		"format-icons": {
-			"headphones": "",
+			"headphones": "🎧",
 			"default": [
-				"",
-				""
+				"🔈",
+				"🔉",
+				"🔊",
 			]
 		},
 		"scroll-step": 5,
 		"on-click": "pamixer -t",
-		"on-click-right": "pavucontrol"
+		"on-click-right": "pavucontrol" 
 	},
 	"memory": {
 		"interval": 5,
@@ -123,13 +137,41 @@
 		},
 		"format": "{icon} {capacity}%",
 		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
+			"🔋",
+			"🔋",
+			"🪫",
 		]
 	},
+
+	"bluetooth": {
+		"format": "ᛒ {status}",
+		"format-connected": "ᛒ {device_alias}",
+		"format-connected-battery": "ᛒ {device_alias} {device_battery_percentage}%",
+		// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+	},
+	"hyprland/language": {
+    	"format": "{short}",
+	},
+	"network": {
+    	"interface": "wlan0",
+    	"format": "{ifname} 🔄",
+    	"format-wifi": "{essid} ({signalStrength}%) 🛜",
+    	"format-ethernet": "{ifname} 🌐",
+    	"format-disconnected": "{ifname} ❌🌐",
+
+    	"tooltip-format": "None",
+    	"tooltip-format-wifi": "{ifname}",
+    	"tooltip-format-ethernet": "{ipaddr}/{cidr}",
+    	"tooltip-format-disconnected": "Disconnected",
+
+    	"max-length": 50,
+		"interval": 5,
+	},
+	
 	"disk": {
 		"interval": 5,
 		"format": "Disk {percentage_used:2}%",

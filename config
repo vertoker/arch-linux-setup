@@ -162,6 +162,8 @@
 	},
 	"network": {
     	"interface": "wlan0",
+		"on-click-right": "nm-connection-editor",
+
     	"format": "{ifname} 🔄",
     	"format-wifi": "{essid} ({signalStrength}%) 🛜",
     	"format-ethernet": "{ifname} 🌐",

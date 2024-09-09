@@ -3,7 +3,7 @@
 Packages
 - pamixer - audio utility
 - pavucontr - GUI audio devices manager
-- 
+- nm-connection-editor - network manager
     - for manual wifi, use iwd (iwctl)
 
 TODO

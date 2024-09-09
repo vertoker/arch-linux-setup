@@ -30,6 +30,7 @@ window#waybar {
 #cpu,
 #battery,
 #disk,
+#backlight,
 #tray {
 	background: #1a1a1a;
 }
@@ -51,22 +52,6 @@ window#waybar {
 	padding: 0 3px;
 }
 
-#pulseaudio {
-	color: #268bd2;
-}
-#memory {
-	color: #2aa198;
-}
-#cpu {
-	color: #6c71c4;
-}
-#battery {
-	color: #859900;
-}
-#disk {
-	color: #b58900;
-}
-
 #clock,
 #pulseaudio,
 #memory,
@@ -75,6 +60,7 @@ window#waybar {
 #language,
 #network,
 #bluetooth,
+#backlight,
 #disk {
 	padding: 0 10px;
 }

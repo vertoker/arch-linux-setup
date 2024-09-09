@@ -13,6 +13,10 @@
 		"custom/right-arrow-dark",
 		
 		"custom/right-arrow-light",
+		"backlight",
+		"custom/right-arrow-dark",
+		
+		"custom/right-arrow-light",
 		"pulseaudio",
 		"custom/right-arrow-dark",
 		
@@ -137,14 +141,14 @@
 		},
 		"format": "{icon} {capacity}%",
 		"format-icons": [
-			"🔋",
-			"🔋",
 			"🪫",
+			"🔋",
+			"🔋",
 		]
 	},
 
 	"bluetooth": {
-		"format": "ᛒ {status}",
+		"format": "ᛒ",
 		"format-connected": "ᛒ {device_alias}",
 		"format-connected-battery": "ᛒ {device_alias} {device_battery_percentage}%",
 		// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
@@ -170,6 +174,11 @@
 
     	"max-length": 50,
 		"interval": 5,
+	},
+	"backlight": {
+    	"device": "intel_backlight",
+    	"format": "{icon} {percent}%",
+    	"format-icons": ["🔆"],
 	},
 	
 	"disk": {

@@ -5,10 +5,6 @@
 	"position": "top",
 
 	"modules-left": [
-		"hyprland/workspaces",
-		"custom/right-arrow-dark",
-		
-		"custom/right-arrow-light",
 		"battery",
 		"custom/right-arrow-dark",
 		
@@ -19,6 +15,10 @@
 		"custom/right-arrow-light",
 		"pulseaudio",
 		"custom/right-arrow-dark",
+		
+		//"custom/right-arrow-light",
+		//"disk",
+		//"custom/right-arrow-dark",
 		
 		"custom/right-arrow-light",
 		"memory",
@@ -42,6 +42,10 @@
 		"custom/right-arrow-dark",
 	],
 	"modules-right": [
+		"custom/left-arrow-dark",
+		"hyprland/workspaces",
+		"custom/left-arrow-light",
+
 		"custom/left-arrow-dark",
 		"clock#3",
 		"custom/left-arrow-light",
@@ -79,18 +83,18 @@
 	"clock#3": {
 		//"locale": "ru",
 		"format": "{:%A}",
-		"tooltip": false
+		"tooltip": false,
 	},
 	// Date
 	"clock#2": {
 		"format": "{:%d-%m-%Y}",
-		"tooltip": false
+		"tooltip": false,
 	},
 	// Time
 	"clock#1": {
 		"interval": 1,
 		"format": "{:%H:%M:%S}",
-		"tooltip": false
+		"tooltip": false,
 	},
 
 	"hyprland/workspaces": {
@@ -167,7 +171,7 @@
 	},
 	"network": {
     	"interface": "wlan0",
-		"on-click-right": "nm-connection-editor",
+	    "on-click-right": "nm-connection-editor",
 
     	"format": "{ifname} 🔄",
     	"format-wifi": "{essid} ({signalStrength}%) 🛜",
@@ -189,7 +193,7 @@
 	},
 	
 	"disk": {
-		"interval": 5,
+		"interval": 60,
 		"format": "Disk {percentage_used:2}%",
 		"path": "/"
 	},
